@@ -2,34 +2,44 @@
 <html lang="es">
     <head>
         <title>Mi pagina web</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+        <link rel="stylesheet" href="./reset.css" />
+        <link rel="stylesheet" href="./styles.css" />
     </head>
     <body>
         <header>
-         <h1>Este es el titulo pricipal de mi pagina web</h1>
-         <span>HOME</span>
-         <span>NOTICIAS</span>
-         <span>CLIMA</span>
+            <div id="titulos">
+         <h1 class="mitexto" id="principal">Mi Primer Diario Noticias</h1>
+            </div>
+            <span>HOME</span>
+            <span>NOTICIAS</span>
+            <span>CLIMA</span>
         </header>
 
         <main>
-            <img src="./noticias.jpeg" />
+            <img src="./noticias.jpeg" class="logo" />
 
             <section>
-             <h2>Este es un titulo de una seccion de noticias</h2>
-             
+             <h2 class="mitexto">Este es un titulo de una seccion de noticias</h2>
+             <div id="cards-container">
              <article>    
-             
-                <h3>Esta es la noticia Nº1</h3>
-               
+              <div class="cards">
+                <h3 class="mitexto">Esta es la noticia Nº1</h3>
+                <img src="./Noticianº1.jpg" class="logo" />
                 <div>
                     <p>Este sera el primer parrafo de mi noticia.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos officiis illo quis laboriosam repellendus eius. Et reiciendis minus perferendis repellat quas nemo eligendi quis rem eaque. Labore earum praesentium cumque. </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Quos officiis illo quis laboriosam repellendus eius. 
+                     Et reiciendis minus perferendis repellat quas nemo eligendi quis rem eaque.
+                     Labore earum praesentium cumque.</p>
                </div>
+            </div>
          </article>
          <hr />
          <article>
-        
-            <h3>Esta es la noticia Nº2</h3>
+            <div class="cards">
+            <h3 class="mitexto">Esta es la noticia Nº2</h3>
+            <img src="./Noticianº2.jpeg" class="logo"/>
             <p>Este es un listado de cosa importantes para esta noticia</p>
          
             <ol>
@@ -37,18 +47,27 @@
              <li>Este es el segundo item</li> 
              <li>Este es el tercero item</li> 
             </ol> 
+            </div>
+        </article>
          <hr /> 
-         <h3>Esta es la noticia Nº3</h3>
+        <article>
+         <div class="cards">
+         <h3 class="mitexto">Esta es la noticia Nº3</h3>
+         <img src="./noticiasNº3.jpg" class="logo"/>
          <p>Este es listado de cosas sin ordenar</p>
          <ul>
             <li>este es un elemneto</li>
             <li>otro elemento</li>
             <li>otro elemento</li>
-         </ul>
+          </ul>
+          </div>
            </article>
+         </div>
          </section>
         </main>
+
      <footer>
+
         <p>
          Este es el footer de mi pag. enlaces
         </p>
